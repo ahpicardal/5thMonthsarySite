@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 5th Monthsary</title>
+
+<!-- Google Fonts: Cormorant Garamond (display), Jost (body), Caveat (handwritten letter) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loader">
+    <div class="loader-heart">♥</div>
+    <p class="loader-text">opening our little world…</p>
+  </div>
+
+  <!-- ============ SCROLL PROGRESS BAR ============ -->
+  <div id="scroll-progress"></div>
+
+  <!-- ============ AMBIENT LAYERS ============ -->
+  <div id="floating-hearts"></div>
+  <div id="stars"></div>
+  <div id="cursor-glow"></div>
+
+  <!-- ============ MUSIC PLAYER ============ -->
+  <!-- Replace music/song.mp3 with your own song -->
+  <audio id="bg-music" src="music/song.mp3" loop preload="auto"></audio>
+  <button id="music-toggle" aria-label="Play music">
+    <span class="music-icon">♫</span>
+  </button>
+
+  <!-- ============ 1. HERO ============ -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="eyebrow fade-in">five months, one us</p>
+      <h1 class="hero-title">
+        <span class="typing-line" id="typing-target"></span>
+      </h1>
+      <p class="hero-subtitle fade-in">Five months, countless beautiful memories, and forever to go.</p>
+      <button class="btn-primary" id="journey-btn">Our Journey</button>
+    </div>
+    <div class="scroll-hint">scroll</div>
+  </section>
+
+  <!-- ============ 2. OUR STORY TIMELINE ============ -->
+  <section id="story" class="section">
+    <h2 class="section-title reveal">Our Story, So Far</h2>
+    <p class="section-sub reveal">every thread that led to today</p>
+
+    <div class="timeline">
+      <!-- TIMELINE ENTRY: edit title/date/description freely, add more <div class="timeline-item"> blocks to add entries -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Day One</span>
+          <h3>The Day We Met</h3>
+          <p>Our first meeting during Leanne's group study.</p>
+          <div class="timeline-img-placeholder">
+            <img src="images/photo1.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Soon After</span>
+          <h3>Our First Real Conversation</h3>
+          <p>Bayag ng baka assist.</p>
+          <div class="timeline-img-placeholder">
+            <img src="images/photo2.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">The Big One</span>
+          <h3>Our First Picture Together</h3>
+          <p>My long awaited picture of us together.</p>
+          <div class="timeline-img-placeholder">
+            <img src="images/photo3.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">Somewhere In Between</span>
+          <h3>Xmas Together</h3>
+          <p>Us during Christmas season.</p>
+          <div class="timeline-img-placeholder">
+            <img src="images/photo4.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">A Quiet Favorite</span>
+          <h3>Valentine's Day</h3>
+          <p>Day with my favorite valentine.</p>
+          <div class="timeline-img-placeholder">
+            <img src="images/photo5.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card timeline-card--today">
+          <span class="timeline-date">Today</span>
+          <h3>Five Months Together</h3>
+          <p>And somehow, we're still choosing each other and counting the days until we're together again.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. PHOTO GALLERY ============ -->
+  <section id="gallery" class="section">
+    <h2 class="section-title reveal">A Few Favorites</h2>
+
+    <!-- GALLERY: add more <div class="gallery-item"> blocks and point src to your own images -->
+    <div class="gallery-grid">
+      <div class="gallery-item reveal"><img src="images/memory1.jpg" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="images/memory2.jpg" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="images/memory3.jpg" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="images/memory4.jpg" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="images/memory5.jpg" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="images/memory6.jpg" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="images/memory7.jpg" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="images/memory8.jpg" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="images/memory9.jpg" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="images/memory10.jpg" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="images/memory11.jpg" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="images/memory12.jpg" loading="lazy"></div>
+      <!-- add images/photo7.jpg, photo8.jpg, etc. and duplicate this block for more -->
+    </div>
+  </section>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div id="lightbox">
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <!-- ============ 4. FAVORITE MEMORIES ============ -->
+  <!--
+  <section id="memories" class="section">
+    <h2 class="section-title reveal">Favorite Memories</h2>
+
+    <div class="memories-grid">
+      
+      <div class="memory-card reveal">
+        <div class="memory-img"><img src="images/memory1.jpg" alt="A memory" loading="lazy"></div>
+      </div>
+      <div class="memory-card reveal">
+        <div class="memory-img"><img src="images/memory2.jpg" alt="A memory" loading="lazy"></div>
+      </div>
+      <div class="memory-card reveal">
+        <div class="memory-img"><img src="images/memory3.jpg" alt="A memory" loading="lazy"></div>
+      </div>
+      <div class="memory-card reveal">
+        <div class="memory-img"><img src="images/memory4.jpg" alt="A memory" loading="lazy"></div>
+      </div>
+      <div class="memory-card reveal">
+        <div class="memory-img"><img src="images/memory5.jpg" alt="A memory" loading="lazy"></div>
+      </div>
+      <div class="memory-card reveal">
+        <div class="memory-img"><img src="images/memory6.jpg" alt="A memory" loading="lazy"></div>
+      </div>
+      <div class="memory-card reveal">
+        <div class="memory-img"><img src="images/memory7.jpg" alt="A memory" loading="lazy"></div>
+      </div>
+      <div class="memory-card reveal">
+        <div class="memory-img"><img src="images/memory8.jpg" alt="A memory" loading="lazy"></div>
+      </div>
+      <div class="memory-card reveal">
+        <div class="memory-img"><img src="images/memory9.jpg" alt="A memory" loading="lazy"></div>
+      </div>
+      <div class="memory-card reveal">
+        <div class="memory-img"><img src="images/memory10.jpg" alt="A memory" loading="lazy"></div>
+      </div>
+      <div class="memory-card reveal">
+        <div class="memory-img"><img src="images/memory11.jpg" alt="A memory" loading="lazy"></div>
+      </div>
+      <div class="memory-card reveal">
+        <div class="memory-img"><img src="images/memory12.jpg" alt="A memory" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- ============ 5. REASONS WHY I LOVE YOU ============ -->
+  <section id="reasons" class="section">
+    <h2 class="section-title reveal">Reasons, Among Many</h2>
+    <p class="section-sub reveal">a short, incomplete list</p>
+
+    <div class="reasons-grid">
+      <!-- REASON CARD: edit freely, add or remove cards as you like -->
+      <div class="reason-card reveal"><span class="reason-icon">♥</span><p>Your beautiful eyes.</p></div>
+      <div class="reason-card reveal"><span class="reason-icon">♥</span><p>The way you care about the people around you.</p></div>
+      <div class="reason-card reveal"><span class="reason-icon">♥</span><p>The way you check on me.</p></div>
+      <div class="reason-card reveal"><span class="reason-icon">♥</span><p>Your genuine laugh.</p></div>
+      <div class="reason-card reveal"><span class="reason-icon">♥</span><p>How strong you are on days you don't feel strong at all.</p></div>
+      <div class="reason-card reveal"><span class="reason-icon">♥</span><p>Your cute smile whenever your sungki shows.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. THE LETTER ============ -->
+  <section id="letter" class="section">
+    <h2 class="section-title reveal">A Letter For You</h2>
+    <div class="letter-paper reveal">
+      <!-- LETTER: replace everything inside this <p> with your own words. Keep paragraphs short. -->
+      <p class="letter-text">
+        My lab,<br><br>
+        Five months. It somehow feels like time flew by, but at the same time, it feels like you've been part of my life for so much longer. Thank you for every laugh, every call, every random conversation, every small memory we've made, and even for the days when things weren't easy between us. Thank you for choosing me every single day.<br><br>
+        Being far away from you is probably the hardest part of all of this. I won't pretend that the distance is easy or that I've gotten used to it, because I haven't. There are days when all I want is to be there with you instead of staring at a screen. But if these months have taught me anything, it's how sure I am about you. I don't choose you because you're close, because it's easy, or because everything is always perfect. I choose you because, no matter how apart we are, you're still the person I want to share my life with. Every day, I choose us on purpose.<br><br>
+        I promise to keep trying to be someone who brings you comfort, peace, and love. I know I'm far from perfect, and I know I'll make mistakes along the way. But I hope you also know that I'll always be willing to learn, to listen, and to grow with you. Loving you isn't something I want to do only when it's easy. It's something I want to keep choosing every single day.<br><br>
+        Thank you for being patient with the distance, the bad signal, the schedules that don't always match, and even the days when I'm quieter than usual. Thank you for making me feel like I always have someone to talk to. You're still the first person I want to tell about anything.<br><br>
+        I'm really proud of what we've built in these five months. We've laughed together, cried together, grown together, and made memories that I'll always hold close to my heart. I know we're still at the beginning of our story, but that means there's still so much left for us to experience together.<br><br>
+        Happy 5th monthsary, lab. Thank you for loving me, for believing in us, and for making these past five months some of the happiest of my life. I love you, always.<br><br>
+        Yours,
+      </p>
+      <p class="letter-signature">— Adrian</p>
+    </div>
+  </section>
+
+  <!-- ============ 7. COUNTDOWN ============ -->
+  <section id="countdown" class="section">
+    <h2 class="section-title reveal">Since We Became "Us"</h2>
+    <!-- COUNTDOWN: change this date to the day you got together (YYYY-MM-DDTHH:MM:SS) -->
+    <p class="section-sub reveal" id="start-date-label">counting from Feb 5, 2026</p>
+
+    <div class="countdown-grid reveal">
+      <div class="countdown-box"><span id="cd-months">0</span><label>months</label></div>
+      <div class="countdown-box"><span id="cd-days">0</span><label>days</label></div>
+      <div class="countdown-box"><span id="cd-hours">0</span><label>hours</label></div>
+      <div class="countdown-box"><span id="cd-minutes">0</span><label>minutes</label></div>
+      <div class="countdown-box"><span id="cd-seconds">0</span><label>seconds</label></div>
+    </div>
+  </section>
+
+  <!-- ============ 8. INTERACTIVE LOVE NOTES ============ -->
+  <section id="notes" class="section">
+    <h2 class="section-title reveal">Open If You Need One</h2>
+    <p class="section-sub reveal">tap an envelope</p>
+
+    <!-- LOVE NOTES: edit the data-note text on each envelope, add more envelopes freely -->
+    <div class="envelopes reveal">
+      <button class="envelope" data-note="I miss you, right now, as you read this.">✉</button>
+      <button class="envelope" data-note="You make everyday brighter than it should be.">✉</button>
+      <button class="envelope" data-note="I'm proud of you even when you don't feel the same to yourself.">✉</button>
+      <button class="envelope" data-note="There are always more reasons to love you.">✉</button>
+      <button class="envelope" data-note="I love you so much more than you know.">✉</button>
+    </div>
+
+    <div id="note-popup">
+      <p id="note-text"></p>
+      <button id="note-close">close</button>
+    </div>
+  </section>
+
+  <!-- ============ 9. ENDING ============ -->
+  <section id="ending" class="section">
+    <div class="ending-inner reveal">
+      <h2>Thank you for these five months.</h2>
+      <p>No matter how far apart we are, you'll always be the closest person to my heart.</p>
+      <button class="btn-primary" id="replay-btn">Replay Our Journey</button>
+    </div>
+  </section>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
